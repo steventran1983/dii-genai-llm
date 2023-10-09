@@ -21,7 +21,7 @@ const Main = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        paddingTop: "5rem",
+        paddingTop: "4rem",
       }}
     >
       <img src={quantumImg} alt="iphone" height="100px" width="100px" />
@@ -77,12 +77,20 @@ const Main = () => {
               Ask complex questions
             </Typography>{" "}
           </Box>
-          <Card sx={{ maxWidth: 345, marginTop: "1rem" }}>
+          <Card
+            elevation={3}
+            sx={{
+              maxWidth: 345,
+              marginTop: "1rem",
+              oxShadow:
+                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+            }}
+          >
             <CardActionArea>
               <CardContent>
                 <Typography variant="body1">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  Write a SQL query to find the total revenue for each customer
+                  in the year 2022, sorted by revenue in descending order.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -111,12 +119,20 @@ const Main = () => {
               Get better answers
             </Typography>{" "}
           </Box>
-          <Card sx={{ maxWidth: 345, marginTop: "1rem" }}>
+          <Card
+            elevation={3}
+            sx={{
+              maxWidth: 345,
+              marginTop: "1rem",
+              oxShadow:
+                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+            }}
+          >
             <CardActionArea>
               <CardContent>
                 <Typography variant="body1" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  Can you walk me through a step-by-step process to design and
+                  implement a robust data ingestion pipeline into Snowflake?
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -145,21 +161,28 @@ const Main = () => {
               Get creative inspriration
             </Typography>{" "}
           </Box>
-          <Card sx={{ maxWidth: 345, marginTop: "1rem" }}>
+          <Card
+            elevation={3}
+            sx={{
+              maxWidth: 345,
+              marginTop: "1rem",
+              boxShadow:
+                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+            }}
+          >
             <CardActionArea>
               <CardContent>
                 <Typography variant="body1" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  Address the challenges of ingesting real-time streaming data
+                  versus traditional batch-based data sources into ADF?
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
         </Box>
       </Box>
-      <Box sx={{ maxWidth: "60%", margin: "2rem" }}>
+      <Box sx={{ maxWidth: "60%", margin: "3rem" }}>
         <Typography
-          variant="h6"
           align="center"
           sx={{
             color: `${colorTheme.text}`,
@@ -169,14 +192,47 @@ const Main = () => {
           just addressed. They're transformed into innovative solutions.
         </Typography>
       </Box>
-      <Typography>Choose a conversation based on job domain</Typography>
+      <Typography
+        sx={{
+          color: `${colorTheme.text}`,
+        }}
+      >
+        Choose a conversation based on job domain
+      </Typography>
       <ButtonGroup
         variant="contained"
         aria-label="outlined primary button group"
+        sx={{
+          marginTop: "1rem",
+        }}
       >
-        <Button>Software Engineer</Button>
-        <Button>Data Engineer</Button>
-        <Button>Management Team</Button>
+        <Button
+          sx={{
+            padding: "1rem",
+            background: `${colorTheme.magenta}`,
+            color: `${colorTheme.white}`,
+          }}
+        >
+          Software Engineer
+        </Button>
+        <Button
+          sx={{
+            padding: "1rem",
+            background: `${colorTheme.magenta}`,
+            color: `${colorTheme.white}`,
+          }}
+        >
+          Data Engineer
+        </Button>
+        <Button
+          sx={{
+            padding: "1rem",
+            background: `${colorTheme.magenta}`,
+            color: `${colorTheme.white}`,
+          }}
+        >
+          Management Team
+        </Button>
       </ButtonGroup>
     </Container>
   );
